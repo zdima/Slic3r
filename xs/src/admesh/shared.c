@@ -141,7 +141,6 @@ void
 stl_write_off(stl_file *stl, ADMESH_CHAR *file) {
   int i;
   FILE      *fp;
-  char      *error_msg;
 
   if (stl->error) return;
 
@@ -172,7 +171,6 @@ void
 stl_write_vrml(stl_file *stl, ADMESH_CHAR *file) {
   int i;
   FILE      *fp;
-  char      *error_msg;
 
   if (stl->error) return;
 

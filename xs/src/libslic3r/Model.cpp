@@ -450,10 +450,10 @@ ModelObject::ModelObject(Model *model, const ModelObject &other, bool copy_volum
     layer_height_ranges(other.layer_height_ranges),
     part_number(other.part_number),
     layer_height_spline(other.layer_height_spline),
-    trafo_obj(other.trafo_obj),
     _bounding_box(other._bounding_box),
     _bounding_box_valid(other._bounding_box_valid),
-    model(model)
+    model(model),
+    trafo_obj(other.trafo_obj)
 {
     if (copy_volumes) {
         this->volumes.reserve(other.volumes.size());

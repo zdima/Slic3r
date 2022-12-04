@@ -23,7 +23,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include "stl.h"
-#include "config.h"
 
 #if !defined(SEEK_SET)
 #define SEEK_SET 0
@@ -127,7 +126,6 @@ void
 stl_write_ascii(stl_file *stl, const ADMESH_CHAR *file, const char *label) {
   int       i;
   FILE      *fp;
-  char      *error_msg;
 
   if (stl->error) return;
 
@@ -168,7 +166,6 @@ void
 stl_print_neighbors(stl_file *stl, ADMESH_CHAR *file) {
   int i;
   FILE *fp;
-  char *error_msg;
 
   if (stl->error) return;
 
@@ -197,7 +194,6 @@ void
 stl_write_binary(stl_file *stl, const ADMESH_CHAR *file, const char *label) {
   FILE      *fp;
   int       i;
-  char      *error_msg;
 
   if (stl->error) return;
 
@@ -267,7 +263,6 @@ stl_write_quad_object(stl_file *stl, ADMESH_CHAR *file) {
   FILE      *fp;
   int       i;
   int       j;
-  char      *error_msg;
   stl_vertex connect_color;
   stl_vertex uncon_1_color;
   stl_vertex uncon_2_color;
@@ -335,7 +330,6 @@ void
 stl_write_dxf(stl_file *stl, ADMESH_CHAR *file, char *label) {
   int       i;
   FILE      *fp;
-  char      *error_msg;
 
   if (stl->error) return;
 

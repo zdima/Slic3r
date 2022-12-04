@@ -186,7 +186,7 @@ void calculate_normals(stl_file *stl) {
 }
 
 void stl_transform(stl_file *stl, double const *trafo3x4) {
-  int i_face, i_vertex, i, j;
+  int i_face, i_vertex;
   if (stl->error)
     return;
   for (i_face = 0; i_face < stl->stats.number_of_facets; ++ i_face) {
@@ -212,7 +212,7 @@ void stl_transform(stl_file *stl, double const *trafo3x4) {
 }
 
 void stl_get_transform(stl_file const *stl_src, stl_file *stl_dst, double const *trafo3x4) {
-  int i_face, i_vertex, i, j;
+  int i_face, i_vertex;
   if (stl_src->error || stl_dst->error)
     return;
   

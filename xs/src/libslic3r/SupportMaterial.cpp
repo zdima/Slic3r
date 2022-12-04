@@ -1191,7 +1191,7 @@ SupportMaterial::p(SurfacesPtr &surfaces)
 void
 SupportMaterial::append_polygons(Polygons &dst, Polygons &src)
 {
-    for (const auto polygon : src) {
+    for (const auto& polygon : src) {
         dst.push_back(polygon);
     }
 }

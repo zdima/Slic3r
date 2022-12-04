@@ -76,7 +76,6 @@ stl_count_facets(stl_file *stl, const ADMESH_CHAR *file) {
   size_t         s;
   unsigned char  chtest[128];
   int            num_lines = 1;
-  char           *error_msg;
 
   if (stl->error) return;
 

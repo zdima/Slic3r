@@ -50,7 +50,7 @@ class MultiPoint
     protected:
     MultiPoint() {};
     explicit MultiPoint(const Points &_points): points(_points) {};
-    ~MultiPoint() = default;
+    virtual ~MultiPoint() = default;
 };
 
 } // namespace Slic3r

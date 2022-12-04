@@ -36,9 +36,7 @@ class ConfigOptionException : public std::exception {
         : opt_key(_opt_key) {};
 
     virtual const char* what() const noexcept {
-        std::string s("Exception with the option: ");
-        s += this->opt_key;
-        return s.c_str();
+        return this->opt_key.c_str();
     }
 };
 
@@ -52,9 +50,7 @@ class InvalidOptionException : public ConfigOptionException {
     
     public:
     virtual const char* what() const noexcept {
-        std::string s("Invalid value for option: ");
-        s += this->opt_key;
-        return s.c_str();
+        return this->opt_key.c_str();
     }
 };
 
