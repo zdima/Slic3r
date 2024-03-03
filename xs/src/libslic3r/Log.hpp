@@ -8,9 +8,6 @@
 #include <memory>
 #include <set>
 
-#ifdef DEBUG
-#undef DEBUG
-#endif
 
 namespace Slic3r {
 
